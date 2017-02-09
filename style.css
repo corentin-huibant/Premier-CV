@@ -1,0 +1,179 @@
+body { /*fond ordinateur CV*/
+  background: #008080 fixed;
+  width : 100%;
+  margin: auto;
+}
+#header { /*premier bloc-presentation*/
+  background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
+  width: 40%;
+  min-width: 40%;
+  height: 360px;
+  min-height: 360px;
+  border: 3px ridge #BAB3BA;
+  box-shadow: 1px 1px 2px 1px;
+  overflow: auto;
+  position: absolute;
+  top : 8%;
+  right: 5%;
+  z-index: 4;
+}
+h1 { /*petit entête bleue*/
+  Background: linear-gradient(to right, #04047C, #040C85, #061B8C, #082895, #09369C, #0A45A2, #0C3FA5, #0C51AE, #0C58B2, #0C68BB, #0B72C2, #0C77C6);
+  width: 100%;
+  height: 25px;
+  border: 18% ridge #04047C;
+  font-size: 18px;
+  color: white;
+  margin-top: 1px;
+}
+#error { /*message d'erreur dans le premier bloc*/
+  background: white;
+  color: black;
+  height: 90px;
+  width: 98%;
+  border: 1px groove #FAFAFA;
+  border: groove white;
+  margin-top: -7px;
+  align: center;
+}
+#center { /*centrage du message d'erreur*/
+  position: absolute;
+  top: 14%;
+  left: 16%;
+}
+.textMarge { /*marge de la présentation*/
+  text-align: left;
+  margin-left: 30%;
+}
+#xp { /*deuxième bloc - l'expérience*/
+  background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
+  width: 60%;
+  border: 3px ridge #BAB3BA;
+  box-shadow: 1px 1px 2px 1px;
+  overflow: auto;
+  position: absolute;
+  top: 40%;
+  left: 4%;
+  z-index: 3;
+}
+h2{
+  Background: linear-gradient(to right, #04047C, #040C85, #061B8C, #082895, #09369C, #0A45A2, #0C3FA5, #0C51AE, #0C58B2, #0C68BB, #0B72C2, #0C77C6);
+  width: 100%;
+  height: 25px;
+  border: 18% ridge #04047C;
+  font-size: 18px;
+  color: white;
+  margin-top: -1px;
+}
+#comput { /*troisième bloc - les compétences aquises*/
+  background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
+  width: 50%;
+  height: 400px;
+  border: 3px ridge #BAB3BA;
+  box-shadow: 1px 1px 2px 1px;
+}
+#whiteWindow { /*fenêtre blanche des compétences*/
+  background: white;
+  width: 49.5%;
+  height: 300px;
+  border: 1px groove #FAFAFA;
+  border: groove white;
+  position: absolute;
+  top : 18%;
+  left: 0.3%;
+  overflow: auto;
+  display: flex;
+  justify-content: right;
+  align-content: stretch;
+}
+.firstLine {
+}
+.secondtLine {
+}
+.thirdLine {
+}
+/*#progressWindows {
+  width: 20%;
+  height: 9px;
+  padding-top: 1px;
+  background-color: white;
+  border: 1px solid black;
+}
+#progressWindows:after {
+    content: '||||||||||||||||||';
+    display: block;
+    width: 11%;
+    height: 8px;
+    overflow: hidden;
+    font: bolder 55px/8px sans-serif;
+    color: #050370;
+    letter-spacing: -10px;
+    position: absolute;
+    left: -1%;
+}*/
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+}
+li {
+  flex-wrap : wrap;
+  align-content: stretch;
+}
+#formation { /*quatrième bloc - la formation*/
+  background: linear-gradient(to right, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
+  width: 40%;
+  border: 3px ridge #BAB3BA;
+  box-shadow: 1px 1px 2px 1px;
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  z-index: 1;
+}
+input { /*boutton supprimer*/
+  background: right #BAB3BA;
+  color: black;
+  margin-left: 78%;
+}
+button[title="reduct"] {
+  height: 19px;
+  width: 19px;
+  background: #BAB3BA;
+  color: black;
+}
+button[title="grow"] {
+  height: 19px;
+  width: 19px;
+  background: #BAB3BA;
+  color: black;
+}
+button[title="close"] {
+  height: 19px;
+  width: 19px;
+  background: #BAB3BA;
+  color: black;
+}
+#buttonPlace { /*place des boutons fermer, réduir et agrandir de la première fenêtre*/
+  position: absolute;
+  top: 0.2ex;
+  right: 1%;
+}
+footer {
+  width: 100%;
+  height: 22px;
+  background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
+  position: absolute;
+  bottom: 0px;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: gray;
+}
