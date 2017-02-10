@@ -5,26 +5,24 @@ body { /*fond ordinateur CV*/
 }
 #header { /*premier bloc-presentation*/
   background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
-  width: 40%;
-  min-width: 40%;
-  height: 360px;
-  min-height: 360px;
+  width: 35%;
+  height: 350px;
   border: 3px ridge #BAB3BA;
   box-shadow: 1px 1px 2px 1px;
   overflow: auto;
   position: absolute;
-  top : 8%;
-  right: 5%;
-  z-index: 4;
+  top : 1%;
+  right: 3%;
+  z-index: 5;
 }
 h1 { /*petit entête bleue*/
   Background: linear-gradient(to right, #04047C, #040C85, #061B8C, #082895, #09369C, #0A45A2, #0C3FA5, #0C51AE, #0C58B2, #0C68BB, #0B72C2, #0C77C6);
   width: 100%;
-  height: 25px;
+  height: 24px;
   border: 18% ridge #04047C;
   font-size: 18px;
   color: white;
-  margin-top: 1px;
+  margin-top: -0.1%;
 }
 #error { /*message d'erreur dans le premier bloc*/
   background: white;
@@ -35,6 +33,7 @@ h1 { /*petit entête bleue*/
   border: groove white;
   margin-top: -7px;
   align: center;
+  font-size: 14px;
 }
 #center { /*centrage du message d'erreur*/
   position: absolute;
@@ -47,19 +46,25 @@ h1 { /*petit entête bleue*/
 }
 #xp { /*deuxième bloc - l'expérience*/
   background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
-  width: 60%;
+  width: 58%;
+  height: 55%;
   border: 3px ridge #BAB3BA;
   box-shadow: 1px 1px 2px 1px;
   overflow: auto;
   position: absolute;
-  top: 40%;
-  left: 4%;
-  z-index: 3;
+  top: 38%;
+  right: 2%;
+  z-index: 2;
+  font-size: 15px;
+  padding-right: -5%;
+}
+#xp:hover {
+  z-index: 5;
 }
 h2{
   Background: linear-gradient(to right, #04047C, #040C85, #061B8C, #082895, #09369C, #0A45A2, #0C3FA5, #0C51AE, #0C58B2, #0C68BB, #0B72C2, #0C77C6);
   width: 100%;
-  height: 25px;
+  height: 24px;
   border: 18% ridge #04047C;
   font-size: 18px;
   color: white;
@@ -67,57 +72,90 @@ h2{
 }
 #comput { /*troisième bloc - les compétences aquises*/
   background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
-  width: 50%;
-  height: 400px;
+  width: 52%;
+  height: 500px;
   border: 3px ridge #BAB3BA;
   box-shadow: 1px 1px 2px 1px;
+  overflow: auto;
+  position: absolute;
+  left: 3%;
+  top: 3%;
+}
+#comput:hover {
+  z-index: 4;
+}
+img {
+  width: 100%;
+  margin-top: -14px;
+  margin-left: -0.1%;
+}
+img[title="smiley"] {
+  height: 40%;
+  width: 40%;
+  position: absolute;
+  top: 45%;
+  right: 65.5%;
 }
 #whiteWindow { /*fenêtre blanche des compétences*/
   background: white;
-  width: 49.5%;
-  height: 300px;
+  width: 98.2%;
+  height: 350px;
   border: 1px groove #FAFAFA;
   border: groove white;
   position: absolute;
-  top : 18%;
-  left: 0.3%;
+  top : 20%;
+  left: 0.5%;
   overflow: auto;
-  display: flex;
-  justify-content: right;
-  align-content: stretch;
 }
-.firstLine {
+#brain { /*coté gauche de la fenêter des compétences, avec le logo windows*/
+  height: 250px;
+  width: 25%;
+  background: white;
+  position: absolute;
 }
-.secondtLine {
+h3 {
+  font-size: 14px;
 }
-.thirdLine {
+#brain p {
+  font-size: 12px;
 }
-/*#progressWindows {
-  width: 20%;
+#brain li {
+  font-size: 12px;
+    margin-left: -16%;
+  list-style-type: none;
+  text-decoration: underline;
+}
+#blueLine {
+  width: 100%;
+  height: 0.5%;
+  background: blue;
+}
+table {
+  position: absolute;
+  left: 25%;
+  font-size: 12px;
+}
+td {
+  width:10%;
+  height:70%;
+}
+#progressWindows { /*fausse barre de progression*/
+  width: 60%;
   height: 9px;
   padding-top: 1px;
   background-color: white;
-  border: 1px solid black;
+  border: 1px ridge black;
 }
-#progressWindows:after {
-    content: '||||||||||||||||||';
+#progressWindows:after { /*contenant de la fausse barre de progression*/
+    content: '|||||||||||||||';
     display: block;
-    width: 11%;
+    width: 30%;
     height: 8px;
     overflow: hidden;
     font: bolder 55px/8px sans-serif;
     color: #050370;
     letter-spacing: -10px;
-    position: absolute;
-    left: -1%;
-}*/
-nav ul {
-  list-style-type: none;
-  display: inline-block;
-}
-li {
-  flex-wrap : wrap;
-  align-content: stretch;
+    margin-left: -4%;
 }
 #formation { /*quatrième bloc - la formation*/
   background: linear-gradient(to right, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
@@ -126,13 +164,15 @@ li {
   box-shadow: 1px 1px 2px 1px;
   position: absolute;
   bottom: 5%;
-  right: 2%;
-  z-index: 1;
+  left: 2%;
+  z-index: 2;
 }
-input { /*boutton supprimer*/
+input[title="supress"] { /*boutton supprimer*/
   background: right #BAB3BA;
   color: black;
-  margin-left: 78%;
+  position: absolute;
+  right: 7%;
+  top: 90%;
 }
 button[title="reduct"] {
   height: 19px;
@@ -157,12 +197,123 @@ button[title="close"] {
   top: 0.2ex;
   right: 1%;
 }
-footer {
+#buttonComput { /*place des boutons fermer, réduir et agrandir de la première fenêtre*/
+  position: absolute;
+
+}
+footer { /*menue démarrer*/
   width: 100%;
-  height: 22px;
+  height: 27px;
   background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
   position: absolute;
   bottom: 0px;
+}
+#openWindow { /*Début de la colone du menu défilant*/
+  width: 15%;
+  Height: 63%;
+  background: linear-gradient(to left, #BCBCBC, #B8BAB8, #BABBBA, #BAB3BA);
+  position: absolute;
+  bottom: 27px;
+  z-index: 6;
+  border: 2px outset gray;
+  overflow: auto;
+}
+#bluebar { /*La barre bleue verticale qui se trouve dans le menu*/
+  width: 10%;
+  height: 100%;
+  background: blue;
+  position: absolute;
+  bottom: 0px;
+}
+#opacOne { /*les fausses catégories*/
+  margin-left: 11%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+}
+#opacTwo {
+  margin-left: 11%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  margin-top: -11%;
+}
+#opacThree {
+  margin-left: 11%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  margin-top: -11%;
+}
+#opacFour {
+  margin-left: 11%;
+padding-top: 9%;
+  padding-bottom: 9%;
+  margin-top: -11%;
+}
+#opacFive {
+  margin-left: 11%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  margin-top: -11%;
+}
+#opacSix {
+  margin-left: 11%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  margin-top: -11%;
+}
+#opacSeven {
+  margin-left: 11%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  margin-top: -11%;
+}
+#opacEight {
+  margin-left: 11%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  margin-top: -11%;
+}
+#opacNine {
+  margin-left: 11%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  margin-top: -11%;
+}
+div[title="error318"]:hover { /*Le clignotement bleu*/
+  background-color: #03007A;
+  color: white;
+}
+.direction { /*Petite fléchettes. Attention, elles influent sur les padding des opac*/
+  text-align: right;
+  font-size: 10px;
+  margin-top: -10%;
+}
+#menu { /*boutton menu*/
+  color: #4A494F;
+  background: right #BAB3BA;
+  position: absolute;
+  left: 0%;
+  height: 99%;
+}
+#links {
+  width: 15%;
+  height: 65%;
+  border: 2px inset gray;
+  position: absolute;
+  right: 0.5%;
+  bottom: 7%;
+}
+img[alt="github"] {
+  height: 100%;
+  width: 10%;
+  margin-bottom: -0.9%;
+}
+img[alt="linkedin"] {
+  height: 100%;
+  width: 10%;
+  margin-bottom: -0.9%;
+}
+#links span {
+  margin-left: 29%;
 }
 strong {
   font-weight: bold;
@@ -175,5 +326,5 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: gray;
+  color: blue;
 }
