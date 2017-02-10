@@ -179,6 +179,7 @@ button[title="reduct"] {
   width: 19px;
   background: #BAB3BA;
   color: black;
+  padding-bottom: 1%;
 }
 button[title="grow"] {
   height: 19px;
